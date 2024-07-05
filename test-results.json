@@ -1,0 +1,295 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\pawan\\Documents\\Workspace\\waTechnology\\playwright.config.ts",
+    "rootDir": "C:/Users/pawan/Documents/Workspace/waTechnology/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 1,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "html-report",
+          "open": "on-failure"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/pawan/Documents/Workspace/waTechnology/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/pawan/Documents/Workspace/waTechnology/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 0
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.45.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "placeBet.spec.ts",
+      "file": "placeBet.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Betslip Automation Tests",
+          "file": "placeBet.spec.ts",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should correctly handle bet selection and updates for Labour Majority",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 44494,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Selecting bet: Labour Majority\n"
+                        },
+                        {
+                          "text": "Bet selected: Labour Majority\n"
+                        },
+                        {
+                          "text": "Updating stake to: 100\n"
+                        },
+                        {
+                          "text": "Stake updated to: 100\n"
+                        },
+                        {
+                          "text": "Updating odds to: 1.02\n"
+                        },
+                        {
+                          "text": "Odds updated to: 1.02\n"
+                        },
+                        {
+                          "text": "Profit: £2.00\n"
+                        },
+                        {
+                          "text": "Profit verified: £2.00\n"
+                        },
+                        {
+                          "text": "Liability: £100.00\n"
+                        },
+                        {
+                          "text": "Liability verified: £100.00\n"
+                        },
+                        {
+                          "text": "Updating stake to: 150\n"
+                        },
+                        {
+                          "text": "Stake updated to: 150\n"
+                        },
+                        {
+                          "text": "Updating odds to: 1.5\n"
+                        },
+                        {
+                          "text": "Odds updated to: 1.5\n"
+                        },
+                        {
+                          "text": "Profit: £75.00\n"
+                        },
+                        {
+                          "text": "Profit verified: £75.00\n"
+                        },
+                        {
+                          "text": "Liability: £150.00\n"
+                        },
+                        {
+                          "text": "Liability verified: £150.00\n"
+                        },
+                        {
+                          "text": "Ensuring place bet button is visible and clickable\n"
+                        },
+                        {
+                          "text": "Setting up alert dialog handler\n"
+                        },
+                        {
+                          "text": "Placing bets\n"
+                        },
+                        {
+                          "text": "Dialog message: Bets confirmed and placed.\n"
+                        },
+                        {
+                          "text": "Bets placed\n"
+                        },
+                        {
+                          "text": "Setting up alert dialog handler\n"
+                        },
+                        {
+                          "text": "Cancelling bets\n"
+                        },
+                        {
+                          "text": "Bets cancelled\n"
+                        },
+                        {
+                          "text": "Liability: £0.00\n"
+                        },
+                        {
+                          "text": "Liability verified: £0.00\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-07-05T12:01:30.223Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "adadf9dee8dadd41ec68-fd72935f42abe0e5034b",
+              "file": "placeBet.spec.ts",
+              "line": 17,
+              "column": 9
+            },
+            {
+              "title": "Place bets with confirmation and verify alert",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 12801,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Selecting bet: Labour Majority\n"
+                        },
+                        {
+                          "text": "Bet selected: Labour Majority\n"
+                        },
+                        {
+                          "text": "Updating stake to: 100\n"
+                        },
+                        {
+                          "text": "Stake updated to: 100\n"
+                        },
+                        {
+                          "text": "Updating odds to: 1.02\n"
+                        },
+                        {
+                          "text": "Odds updated to: 1.02\n"
+                        },
+                        {
+                          "text": "Confirming bets checkbox\n"
+                        },
+                        {
+                          "text": "Bets checkbox confirmed\n"
+                        },
+                        {
+                          "text": "Ensuring place bet button is visible and clickable\n"
+                        },
+                        {
+                          "text": "Setting up alert dialog handler\n"
+                        },
+                        {
+                          "text": "Placing bets\n"
+                        },
+                        {
+                          "text": "Dialog message: Bets confirmed and placed.\n"
+                        },
+                        {
+                          "text": "Bets placed\n"
+                        },
+                        {
+                          "text": "Setting up alert dialog handler\n"
+                        },
+                        {
+                          "text": "Cancelling bets\n"
+                        },
+                        {
+                          "text": "Bets cancelled\n"
+                        },
+                        {
+                          "text": "Liability: £0.00\n"
+                        },
+                        {
+                          "text": "Liability verified: £0.00\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-07-05T12:02:14.887Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "adadf9dee8dadd41ec68-c5f143ca3cbb33201789",
+              "file": "placeBet.spec.ts",
+              "line": 51,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-07-05T12:01:29.769Z",
+    "duration": 58030.795999999995,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

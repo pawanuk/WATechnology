@@ -1,0 +1,30 @@
+import { test, expect } from '@playwright/test';
+
+test('test', async ({ page }) => {
+  await page.goto('https://www.betfred.com/');
+  await page.locator('#CookieReportsOverlay').click();
+  await page.getByRole('button', { name: 'Allow All' }).click();
+  await page.getByRole('button', { name: 'Log In' }).click();
+  await page.getByLabel('Username', { exact: true }).click();
+  await page.getByLabel('Username', { exact: true }).fill('pkcodetech@gmail.com');
+  await page.getByLabel('Password').click();
+  await page.getByLabel('Password').fill('Automation12');
+  await page.getByRole('dialog').getByRole('button', { name: 'Log In' }).click();
+  await page.getByLabel('Username', { exact: true }).click();
+  await page.getByLabel('Username', { exact: true }).click();
+  await page.getByRole('img', { name: 'Clear the field' }).click();
+  await page.getByLabel('Username', { exact: true }).click();
+  await page.getByLabel('Username', { exact: true }).fill('Pawan');
+  await page.getByRole('button', { name: 'Show Password' }).click();
+  await page.getByRole('dialog').getByRole('button', { name: 'Log In' }).click();
+  await page.getByRole('link', { name: 'Football navigation Football' }).click();
+  await page.getByRole('button', { name: 'Home 13/' }).click();
+  await page.getByRole('button', { name: 'Draw 21/' }).click();
+  await page.getByRole('button', { name: 'Away 15/' }).first().click();
+  await page.locator('#stake-1').click();
+  await page.getByRole('button', { name: '+ £ 5', exact: true }).click();
+  await page.locator('#stake-2').click();
+  await page.getByRole('button', { name: '+ £ 5', exact: true }).click();
+  await page.locator('#stake-3').click();
+  await page.getByRole('button', { name: '+ £ 5', exact: true }).click();
+});
